@@ -42,9 +42,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navibar>
-            <ModeToggle />
-          </Navibar>
+          <Navibar />
 
           <main className="mx-4 md:mx-20 ">
             {children}
@@ -55,6 +53,7 @@ export default function RootLayout({
               </div>
             </div>
           </main>
+
           <Toaster></Toaster>
           <Footer></Footer>
         </ThemeProvider>

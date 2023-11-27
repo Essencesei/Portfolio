@@ -3,6 +3,7 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { Label } from "@radix-ui/react-dropdown-menu";
 import { Contactform } from "./Contactform";
+import Image from "next/image";
 
 const Contactsection = () => {
   return (
@@ -11,7 +12,9 @@ const Contactsection = () => {
         Contact
       </h2>
       <div className="flex flex-col md:flex-row">
-        <div className="flex-1"></div>
+        <div className="flex-1 flex justify-center items-center my-12 md:my-0">
+          <Image src={"/contact.svg"} alt={""} width={400} height={400}></Image>
+        </div>
         <div className="flex-1">
           <Contactform />
         </div>

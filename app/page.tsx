@@ -8,7 +8,10 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-col gap-20">
-        <section className="md:h-screen flex" id="home">
+        <section
+          className="md:h-screen flex scroll-my-20 mt-32 md:mt-0"
+          id="home"
+        >
           <Homesection />
         </section>
         <section className="md:h-screen scroll-my-20" id="about">
@@ -18,7 +21,10 @@ const Home = () => {
         <section className="md:h-screen scroll-my-20 " id="projects">
           <Projectsection />
         </section>
-        <section className="md:h-screen scroll-my-20" id="contact">
+        <section
+          className="md:h-screen -scroll-my-52 md:scroll-my-20"
+          id="contact"
+        >
           <Contactsection />
         </section>
       </div>

@@ -82,9 +82,11 @@ export function Contactform() {
                 <FormItem>
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="your_name" {...field} />
+                    <Input placeholder="Juan Dela Cruz" {...field} />
                   </FormControl>
-
+                  <FormDescription>
+                    Enter your real name for identification purposes.
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -98,7 +100,9 @@ export function Contactform() {
                   <FormControl>
                     <Input placeholder="your_email@gmail.com" {...field} />
                   </FormControl>
-
+                  <FormDescription>
+                    Kindly provide a working email address for communication.
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}

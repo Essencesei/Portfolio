@@ -14,6 +14,7 @@ import {
   SiMongoose,
 } from "react-icons/si";
 import { Button, buttonVariants } from "./ui/button";
+import Image from "next/image";
 
 const Aboutsection = () => {
   return (
@@ -22,9 +23,16 @@ const Aboutsection = () => {
         About me
       </h2>
       <div className="flex flex-col md:flex-row ">
-        <div className="flex-1 flex"></div>
+        <div className="flex-1 flex justify-center items-center my-12 md:my-0">
+          <Image
+            src={"/about.svg"}
+            alt={"about_code"}
+            width={400}
+            height={400}
+          ></Image>
+        </div>
         <div className="flex-1 flex flex-col items-center md:items-start gap-8">
-          <p className="leading-7">
+          <p className="leading-7 text-center md:text-start ">
             An aspiring full stack developer, I&apos;m building skills in HTML,
             CSS, JavaScript, TypeScript, MongoDB, Prisma, Node.js, and React. I
             focus on Next.js to create strong digital solutions. I&apos;m
@@ -36,7 +44,7 @@ const Aboutsection = () => {
             Tech Stack
           </h3>
           <div className="flex gap-4 flex-wrap justify-center">
-            <SiHtml5 className="h-8 w-8 " />
+            <SiHtml5 className="h-8 w-8  " />
             <SiCss3 className="h-8 w-8 " />
             <SiJavascript className="h-8 w-8 " />
             <SiTypescript className="h-8 w-8 " />
