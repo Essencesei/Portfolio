@@ -123,7 +123,7 @@ export function Contactform() {
             <Button
               disabled={isLoading}
               type="submit"
-              className="w-full rounded-full md:w-1/3"
+              className="w-full  md:w-1/3"
             >
               {isLoading ? (
                 <Loader2 className="h-4 w-4 animate-spin" />

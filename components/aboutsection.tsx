@@ -52,7 +52,7 @@ const Aboutsection = () => {
 
           <a
             className={`${buttonVariants({
-              className: "w-full rounded-2xl md:w-1/3 ",
+              className: "w-full  md:w-1/3 ",
             })}`}
             download="Resume-Dumlao_Jonathan"
             href="/Dumlao-Jonathan-G_Resume_Updated (3).pdf"
