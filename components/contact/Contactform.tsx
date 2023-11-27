@@ -43,12 +43,7 @@ export function Contactform() {
     console.log(values);
 
     emailjs
-      .send(
-        process.env.SERVICEID as string,
-        process.env.TEMPLATEID as string,
-        values,
-        process.env.PUBLICKEY as string
-      )
+      .send("service_539m0ql", "template_fvjdgyv", values, "URwmFn2Vd7rVIWWeI")
       .then(
         (res) => {
           console.log(res);
