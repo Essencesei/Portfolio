@@ -86,7 +86,7 @@ const Projectsection = () => {
                       className={badgeVariants({ variant: "outline" })}
                       href={project.liveDemoLink}
                     >
-                      <FaCode className="w-4 h-4"></FaCode>
+                      Live Demo
                     </Link>
                   </div>
                 </CardFooter>
