@@ -63,7 +63,7 @@ const Aboutsection = () => {
               className: "w-full  md:w-1/3 ",
             })}`}
             download="Resume-Dumlao_Jonathan"
-            href="/Dumlao-Jonathan-G_Resume_Updated (3).pdf"
+            href="/Resume_Jonathan_G_Dumlao.pdf"
           >
             Download CV
           </a>
