@@ -55,7 +55,7 @@ const Projectsection = () => {
                 <CardContent>
                   <div className="rounded-md  overflow-hidden  w-full ">
                     <Image
-                      className="w-full hover:scale-105 transition-transform"
+                      className="w-full hover:scale-105 transition-transform duration-500"
                       src={project.imageUrl}
                       alt={project.imageAlt}
                       width={400}

@@ -44,7 +44,7 @@ export default function RootLayout({
         >
           <Navibar />
 
-          <main className="mx-4 md:mx-20 ">
+          <main className="mx-4 md:mx-20 select-none">
             {children}
             <div className="fixed right-4 bottom-4 ">
               <div className="flex flex-col gap-2">
