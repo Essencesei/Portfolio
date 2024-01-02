@@ -18,7 +18,10 @@ const Home = () => {
           <Aboutsection />
         </section>
 
-        <section className="md:h-screen scroll-my-20 " id="projects">
+        <section
+          className=" md:min-h-screen md:max-h-fit scroll-my-20 "
+          id="projects"
+        >
           <Projectsection />
         </section>
         <section

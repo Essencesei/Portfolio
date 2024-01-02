@@ -35,15 +35,33 @@ const Projectsection = () => {
       githubLink: "https://github.com/Essencesei/Todo-App",
       liveDemoLink: "https://todo-app-essencesei.vercel.app/",
     },
+    {
+      title: "Note-AI",
+      description:
+        "Note AI: Your Intelligent Note-Talking Companion with Next.js, Prisma, MongoDB, Pinecone, and OpenAI API Integration 🧠📝",
+      imageUrl: "/todoapp.png",
+      imageAlt: "noteai",
+      tech: [
+        "Next js",
+        "Prisma",
+        "MongoDB",
+        "Next Auth",
+        "shadcn",
+        "Pinecone",
+        "OpenAI",
+      ],
+      githubLink: "https://github.com/Essencesei/Note-AI",
+      liveDemoLink: "https://note-ai-essencesei.vercel.app/login",
+    },
   ];
 
   return (
-    <>
+    <section className="">
       <h2 className="text-center text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400 mb-8">
         Projects
       </h2>
 
-      <div className="grid grid-cols-1  gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1  gap-8 md:grid-cols-2 ">
         {projectList.map((project) => {
           return (
             <div key={project.title}>
@@ -95,7 +113,7 @@ const Projectsection = () => {
           );
         })}
       </div>
-    </>
+    </section>
   );
 };
 

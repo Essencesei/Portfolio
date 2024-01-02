@@ -33,12 +33,12 @@ const Aboutsection = () => {
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start gap-8">
           <p className="leading-7 text-center md:text-start ">
-            An aspiring full stack developer, I&apos;m building skills in HTML,
-            CSS, JavaScript, TypeScript, MongoDB, Prisma, Node.js, and React. I
-            focus on Next.js to create strong digital solutions. I&apos;m
-            passionate about learning, crafting user-friendly experiences, and
-            delivering quality, scalable solutions with attention to detail.
-            Excited to contribute and grow within the ever-evolving tech field.
+            An aspiring web developer, I&apos;m building skills in HTML, CSS,
+            JavaScript, TypeScript, MongoDB, Prisma, Node.js, and React. I focus
+            on Next.js to create strong digital solutions. I&apos;m passionate
+            about learning, crafting user-friendly experiences, and delivering
+            quality, scalable solutions with attention to detail. Excited to
+            contribute and grow within the ever-evolving tech field.
           </p>
           <h3 className="text-center text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400 ">
             Tech Stack

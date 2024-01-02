@@ -14,13 +14,13 @@ const Homesection = () => {
           Dumlao
         </h1>
         <h3 className="text-center  scroll-m-20 text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400">
-          Aspiring Fullstack <br className="md:hidden" /> Developer
+          Aspiring Web <br className="md:hidden" /> Developer
         </h3>
 
         <p className="leading-7 text-center md:text-start">
-          Hey there! I&apos;m Jonathan, an aspiring full stack developer. Join
-          me as I bring ideas to life and explore the endless possibilities of
-          web development.
+          Hey there! I&apos;m Jonathan, an aspiring web developer. Join me as I
+          bring ideas to life and explore the endless possibilities of web
+          development.
         </p>
         <div className="flex gap-2 ">
           <Link
