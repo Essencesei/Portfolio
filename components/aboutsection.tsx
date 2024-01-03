@@ -15,6 +15,7 @@ import {
 } from "react-icons/si";
 import { Button, buttonVariants } from "./ui/button";
 import Image from "next/image";
+import Icons from "./aboutsection/icons";
 
 const Aboutsection = () => {
   return (
@@ -44,18 +45,7 @@ const Aboutsection = () => {
             Tech Stack
           </h3>
           <div className="flex gap-4 flex-wrap justify-center">
-            <SiHtml5 className="h-8 w-8  " />
-            <SiCss3 className="h-8 w-8 " />
-            <SiJavascript className="h-8 w-8 " />
-            <SiTypescript className="h-8 w-8 " />
-            <SiTailwindcss className="h-8 w-8 " />
-            <SiReact className="h-8 w-8 " />
-            <SiNextdotjs className="h-8 w-8 " />
-            <SiPrisma className="h-8 w-8 " />
-            <SiNodedotjs className="h-8 w-8 " />
-            <SiExpress className="h-8 w-8 " />
-            <SiMongodb className="h-8 w-8 " />
-            <SiMongoose className="h-8 w-8 " />
+            <Icons />
           </div>
 
           <a
