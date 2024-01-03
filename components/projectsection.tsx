@@ -39,14 +39,14 @@ const Projectsection = () => {
       title: "Note-AI",
       description:
         "Note AI: Your Intelligent Note-Talking Companion with Next.js, Prisma, MongoDB, Pinecone, and OpenAI API Integration 🧠📝",
-      imageUrl: "/todoapp.png",
+      imageUrl: "/noteai.png",
       imageAlt: "noteai",
       tech: [
         "Next js",
         "Prisma",
         "MongoDB",
         "Next Auth",
-        "shadcn",
+        "Shadcn",
         "Pinecone",
         "OpenAI",
       ],
