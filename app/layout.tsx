@@ -11,6 +11,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Scrollup } from "@/components/scrollup";
 import Footer from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
+import Chat from "@/components/chat/Chat";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
               <div className="flex flex-col gap-2">
                 <Scrollup />
                 <ModeToggle />
+                <Chat />
               </div>
             </div>
           </main>
