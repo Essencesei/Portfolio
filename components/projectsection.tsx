@@ -77,7 +77,7 @@ const Projectsection = () => {
       imageUrl: "/pdfai.png",
       imageAlt: "pdfai",
       tech: ["Next js", "Prisma", "MongoDB", "Next Auth", "Shadcn", "OpenAI"],
-      githubLink: "hhttps://github.com/Essencesei/PDF-AI",
+      githubLink: "https://github.com/Essencesei/PDF-AI",
       liveDemoLink: "https://pdf-ai-essencesei.vercel.app/",
     },
   ];
