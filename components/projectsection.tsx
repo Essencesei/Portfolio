@@ -68,7 +68,17 @@ const Projectsection = () => {
         "OpenAI",
       ],
       githubLink: "https://github.com/Essencesei/Note-AI",
-      liveDemoLink: "https://note-ai-essencesei.vercel.app/login",
+      liveDemoLink: "https://note-ai-essencesei.vercel.app/",
+    },
+    {
+      title: "PDF AI",
+      description:
+        "Empower your documents with intelligent insights using PDF AI, a robust application built with Next.js, Prisma, MongoDB, and the OpenAI API.",
+      imageUrl: "/pdfai.png",
+      imageAlt: "pdfai",
+      tech: ["Next js", "Prisma", "MongoDB", "Next Auth", "Shadcn", "OpenAI"],
+      githubLink: "hhttps://github.com/Essencesei/PDF-AI",
+      liveDemoLink: "https://pdf-ai-essencesei.vercel.app/",
     },
   ];
 
