@@ -2,7 +2,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFormState } from "react-hook-form";
 import * as z from "zod";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -21,6 +21,7 @@ import { useFormStatus } from "react-dom";
 import { Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Card, CardContent, CardHeader } from "../ui/card";
+import { motion } from "framer-motion";
 
 export function Contactform() {
   const { toast } = useToast();
@@ -84,9 +85,6 @@ export function Contactform() {
                   <FormControl>
                     <Input placeholder="Juan Dela Cruz" {...field} />
                   </FormControl>
-                  <FormDescription>
-                    Enter your real name for identification purposes.
-                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -100,9 +98,6 @@ export function Contactform() {
                   <FormControl>
                     <Input placeholder="your_email@gmail.com" {...field} />
                   </FormControl>
-                  <FormDescription>
-                    Kindly provide a working email address for communication.
-                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -124,17 +119,19 @@ export function Contactform() {
                 </FormItem>
               )}
             />
-            <Button
+            <motion.button
               disabled={isLoading}
               type="submit"
-              className="w-full  md:w-1/3"
+              whileTap={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05 }}
+              className={`${buttonVariants()} w-full  md:w-1/3`}
             >
               {isLoading ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
               ) : (
                 "Submit"
               )}
-            </Button>
+            </motion.button>
           </form>
         </Form>
       </CardContent>

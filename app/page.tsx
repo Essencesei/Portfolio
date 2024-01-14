@@ -1,6 +1,6 @@
 import React from "react";
 import Homesection from "@/components/homesection";
-import Aboutsection from "@/components/aboutsection";
+import Aboutsection from "@/components/aboutsection/aboutsection";
 import Projectsection from "@/components/projectsection";
 import Contactsection from "@/components/contact/contactsection";
 

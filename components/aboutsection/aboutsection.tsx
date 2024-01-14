@@ -1,21 +1,7 @@
 import React from "react";
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiTailwindcss,
-  SiReact,
-  SiNextdotjs,
-  SiPrisma,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiMongoose,
-} from "react-icons/si";
-import { Button, buttonVariants } from "./ui/button";
 import Image from "next/image";
-import Icons from "./aboutsection/icons";
+import Icons from "./icons";
+import DownloadCV from "./downloadcv";
 
 const Aboutsection = () => {
   return (
@@ -44,19 +30,10 @@ const Aboutsection = () => {
           <h3 className="text-center text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400 ">
             Tech Stack
           </h3>
-          <div className="flex gap-4 flex-wrap justify-center">
-            <Icons />
-          </div>
 
-          <a
-            className={`${buttonVariants({
-              className: "w-full  md:w-1/3 ",
-            })}`}
-            download="Resume-Dumlao_Jonathan"
-            href="/Resume_Jonathan_G_Dumlao.pdf"
-          >
-            Download CV
-          </a>
+          <Icons />
+
+          <DownloadCV />
         </div>
       </div>
     </div>
