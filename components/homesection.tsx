@@ -18,7 +18,7 @@ const Homesection = () => {
         </h3>
 
         <p className="leading-7 text-center md:text-start">
-          Hey there! I&apos;m Jonathan, an aspiring web developer. Join me as I
+          Hey there! I&apos;m Jonathan, A junior web developer. Join me as I
           bring ideas to life and explore the endless possibilities of web
           development.
         </p>
