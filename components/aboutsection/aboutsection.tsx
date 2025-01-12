@@ -20,7 +20,7 @@ const Aboutsection = () => {
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start gap-8">
           <p className="leading-7 text-center md:text-start ">
-           As a junior web developer, I'm currently honing my skills in HTML, CSS, JavaScript, TypeScript, MongoDB, Prisma, Node.js, and React, with a strong focus on Next.js for crafting robust digital solutions. Recently, I've expanded my toolkit to include CakePHP for PHP development, Docker for containerization, and MySQL for relational database management. I'm deeply passionate about learning and thrive on crafting user-friendly experiences. My goal is to deliver quality, scalable solutions with meticulous attention to detail. Excited to contribute and grow within the ever-evolving tech field
+           As a junior web developer, I&apos;m currently honing my skills in HTML, CSS, JavaScript, TypeScript, MongoDB, Prisma, Node.js, and React, with a strong focus on Next.js for crafting robust digital solutions. Recently, I&apos;ve expanded my toolkit to include CakePHP for PHP development, Docker for containerization, and MySQL for relational database management. I&apos;m deeply passionate about learning and thrive on crafting user-friendly experiences. My goal is to deliver quality, scalable solutions with meticulous attention to detail. Excited to contribute and grow within the ever-evolving tech field.
           </p>
           <h3 className="text-center text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400 ">
             Tech Stack
