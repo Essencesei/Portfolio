@@ -6,7 +6,7 @@ import { buttonVariants } from "./ui/button";
 const Footer = () => {
   return (
     <>
-      <div className="h-12 flex  justify-center gap-2 mt-10 md:mt-0">
+      <div className="mt-10 flex h-12 justify-center gap-2 md:mt-0">
         <Link
           target="_blank"
           href={"https://www.linkedin.com/in/jonathan-dumlao/"}

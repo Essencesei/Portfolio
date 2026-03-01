@@ -31,8 +31,8 @@ const Chat = () => {
           <FaRobot size={24} />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="h-[500px] mx-2 flex flex-col w-screen md:w-[300px] -mb-14 md:mb-0 ">
-        <h2 className="pb-4 font-bold flex items-center gap-2">
+      <PopoverContent className="mx-2 -mb-14 flex h-[500px] w-screen flex-col md:mb-0 md:w-[300px]">
+        <h2 className="flex items-center gap-2 pb-4 font-bold">
           <FaRobot />
           Assistant
           <IoIosCloseCircleOutline
@@ -43,14 +43,14 @@ const Chat = () => {
         </h2>
 
         <ul
-          className="flex flex-col gap-2 overflow-y-auto mb-4 text-sm"
+          className="mb-4 flex flex-col gap-2 overflow-y-auto text-sm"
           ref={chatContainerRef}
         >
           {messages.map((message, index) => {
             return (
               <li
                 key={index}
-                className={`border p-2 w-full rounded-lg ${
+                className={`w-full rounded-lg border p-2 ${
                   message.role === "user" ? "bg-primary text-white" : ""
                 }`}
               >
@@ -64,14 +64,14 @@ const Chat = () => {
                     </>
                   )}
                 </p>
-                <p className="break-words whitespace-pre-wrap px-2 pb-2">
+                <p className="whitespace-pre-wrap break-words px-2 pb-2">
                   {message.content}
                 </p>
               </li>
             );
           })}
           <div className="mt-auto">
-            <p className="italic text-center">
+            <p className="text-center italic">
               {isLoading && "Assistant is thinking..."}
               {messages.length === 0 && "Ask me about Jonathan!"}
               {error && error.message}
@@ -79,7 +79,7 @@ const Chat = () => {
           </div>
         </ul>
 
-        <form onSubmit={handleSubmit} className="flex gap-2 w-full mt-auto">
+        <form onSubmit={handleSubmit} className="mt-auto flex w-full gap-2">
           <Input
             value={input}
             onChange={handleInputChange}

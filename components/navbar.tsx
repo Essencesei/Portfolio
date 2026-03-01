@@ -22,9 +22,9 @@ import { IoMenu } from "react-icons/io5";
 const Navbar = () => {
   return (
     <>
-      <div className="z-50 flex justify-between p-3 items-center fixed w-full shadow select-none backdrop-blur-lg ">
+      <div className="fixed z-50 flex w-full select-none items-center justify-between p-3 shadow backdrop-blur-lg">
         <Link href={"/"}>
-          <h1 className="font-bold text-2xl ">Essencesei</h1>
+          <h1 className="text-2xl font-bold">Essencesei</h1>
         </Link>
         <div className="hidden md:block">
           <NavigationMenu>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <div className="h-8"></div>
               </SheetHeader>
 
-              <div className="flex flex-col w-full">
+              <div className="flex w-full flex-col">
                 <SheetClose asChild>
                   <Link href={"#home"} className={navigationMenuTriggerStyle()}>
                     Home

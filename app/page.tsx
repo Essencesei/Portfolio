@@ -7,25 +7,25 @@ import Contactsection from "@/components/contact/contactsection";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col gap-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-20 px-4">
         <section
-          className="md:h-screen flex scroll-my-20 mt-32 md:mt-0"
+          className="mt-32 flex scroll-my-20 md:mt-0 md:h-screen"
           id="home"
         >
           <Homesection />
         </section>
-        <section className="md:h-screen scroll-my-20" id="about">
+        <section className="scroll-my-20 md:h-screen" id="about">
           <Aboutsection />
         </section>
 
         <section
-          className=" md:min-h-screen md:max-h-fit scroll-my-20 "
+          className="scroll-my-20 md:max-h-fit md:min-h-screen"
           id="projects"
         >
           <Projectsection />
         </section>
         <section
-          className="md:h-screen -scroll-my-52 md:scroll-my-20"
+          className="-scroll-my-52 md:h-screen md:scroll-my-20"
           id="contact"
         >
           <Contactsection />

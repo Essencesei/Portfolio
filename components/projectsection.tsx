@@ -21,7 +21,7 @@ const Projectsection = () => {
       y: 300,
     },
     onscreen: {
-      y: 50,
+      y: 0,
 
       transition: {
         type: "spring",
@@ -84,11 +84,11 @@ const Projectsection = () => {
 
   return (
     <section className="">
-      <h2 className="text-center text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400 mb-8">
+      <h2 className="text-balance mb-8 bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 bg-clip-text text-center text-3xl font-extrabold tracking-tight text-transparent dark:from-gray-100 dark:to-gray-400">
         Projects
       </h2>
 
-      <div className="grid grid-cols-1  gap-8 md:grid-cols-2 ">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projectList.map((project) => {
           return (
             <motion.div
@@ -101,12 +101,14 @@ const Projectsection = () => {
                 <Card>
                   <CardHeader>
                     <CardTitle>{project.title}</CardTitle>
-                    <CardDescription>{project.description}</CardDescription>
+                    <CardDescription className="text-pretty">
+                      {project.description}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="rounded-md  overflow-hidden  w-full ">
+                    <div className="w-full overflow-hidden rounded-md">
                       <Image
-                        className="w-full hover:scale-105 transition-transform duration-500"
+                        className="w-full transition-transform duration-500 hover:scale-105"
                         src={project.imageUrl}
                         alt={project.imageAlt}
                         width={400}
@@ -115,7 +117,7 @@ const Projectsection = () => {
                     </div>
                   </CardContent>
                   <CardFooter className="flex flex-col items-start gap-2">
-                    <div className="flex gap-2 flex-wrap">
+                    <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech) => {
                         return (
                           <Badge key={tech} variant={"outline"}>
@@ -130,7 +132,7 @@ const Projectsection = () => {
                         className={badgeVariants({ variant: "outline" })}
                         href={project.githubLink}
                       >
-                        <SiGithub className="w-4 h-4"></SiGithub>
+                        <SiGithub className="h-4 w-4"></SiGithub>
                       </Link>
                       <Link
                         target="_blank"

@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ThemeProvider
@@ -45,9 +45,9 @@ export default function RootLayout({
         >
           <Navibar />
 
-          <main className="mx-4 md:mx-20 select-none">
+          <main className="mx-4 select-none md:mx-20">
             {children}
-            <div className="fixed right-4 bottom-4 ">
+            <div className="fixed bottom-4 right-4">
               <div className="flex flex-col gap-2">
                 <Scrollup />
                 <ModeToggle />

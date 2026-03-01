@@ -6,11 +6,11 @@ import DownloadCV from "./downloadcv";
 const Aboutsection = () => {
   return (
     <div className="flex flex-col">
-      <h2 className="text-center text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400 mb-8">
+      <h2 className="text-balance mb-8 bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 bg-clip-text text-center text-3xl font-extrabold tracking-tight text-transparent dark:from-gray-100 dark:to-gray-400">
         About me
       </h2>
-      <div className="flex flex-col md:flex-row ">
-        <div className="flex-1 flex justify-center items-center my-12 md:my-0">
+      <div className="flex flex-col md:flex-row">
+        <div className="my-12 flex flex-1 items-center justify-center md:my-0">
           <Image
             src={"/about.svg"}
             alt={"about_code"}
@@ -18,11 +18,20 @@ const Aboutsection = () => {
             height={400}
           ></Image>
         </div>
-        <div className="flex-1 flex flex-col items-center md:items-start gap-8">
-          <p className="leading-7 text-center md:text-start ">
-           As a junior web developer, I&apos;m currently honing my skills in HTML, CSS, JavaScript, TypeScript, MongoDB, Prisma, Node.js, and React, with a strong focus on Next.js for crafting robust digital solutions. Recently, I&apos;ve expanded my toolkit to include CakePHP for PHP development, Docker for containerization, and MySQL for relational database management. I&apos;m deeply passionate about learning and thrive on crafting user-friendly experiences. My goal is to deliver quality, scalable solutions with meticulous attention to detail. Excited to contribute and grow within the ever-evolving tech field.
+        <div className="flex flex-1 flex-col items-center gap-8 md:items-start">
+          <p className="text-pretty text-center leading-7 md:text-start">
+            As a web developer, I&apos;m currently honing my skills in HTML,
+            CSS, JavaScript, TypeScript, MongoDB, Prisma, Node.js, and React,
+            with a strong focus on Next.js for crafting robust digital
+            solutions. Recently, I&apos;ve expanded my toolkit to include
+            CakePHP for PHP development, Docker for containerization, and MySQL
+            for relational database management. I&apos;m deeply passionate about
+            learning and thrive on crafting user-friendly experiences. My goal
+            is to deliver quality, scalable solutions with meticulous attention
+            to detail. Excited to contribute and grow within the ever-evolving
+            tech field.
           </p>
-          <h3 className="text-center text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 dark:from-gray-100 dark:to-gray-400 ">
+          <h3 className="text-balance bg-gradient-to-b from-gray-900 via-gray-700 to-gray-600 bg-clip-text text-center text-3xl font-extrabold tracking-tight text-transparent dark:from-gray-100 dark:to-gray-400">
             Tech Stack
           </h3>
 

@@ -58,7 +58,7 @@ const Icons = () => {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        className="flex gap-4 flex-wrap justify-center"
+        className="flex flex-wrap justify-center gap-4"
       >
         {icons.map((icon) => {
           return (

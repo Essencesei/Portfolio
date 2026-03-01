@@ -65,7 +65,7 @@ export function Contactform() {
             title: "Uh oh! Something went wrong.",
             description: err.message,
           });
-        }
+        },
       );
   }
 
@@ -124,7 +124,7 @@ export function Contactform() {
               type="submit"
               whileTap={{ scale: 1.05 }}
               whileHover={{ scale: 1.05 }}
-              className={`${buttonVariants()} w-full  md:w-1/3`}
+              className={`${buttonVariants()} w-full md:w-1/3`}
             >
               {isLoading ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
